@@ -1,0 +1,21 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+
+
+
+  <div *ngIf="!name.author && !name.quote"><img src="assets/dribble_jaguar.gif">
+  </div>
+
+
+
+  <router-outlet></router-outlet>
+  <div class="jumbotron">
+
+    <h1>{{name.quote}}</h1>
+
+
+  </div>
+  <div class="jumbotron">
+    <h2>{{name.author}}</h2>
+  </div>
+</div>
