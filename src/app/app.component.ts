@@ -11,13 +11,13 @@ import { Observable } from "rxjs";
   styleUrls: ["./app.component.css"]
 })
 export class AppComponent implements OnInit {
-  name = [];
+  name;
 
   constructor(private http: HttpClient) {}
   ngOnInit() {
     this.getAdvantageData().subscribe(
       data => {
-        console.log("Data", data);
+        console.log("Data9", data);
         this.name = data;
       },
       error => {

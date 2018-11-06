@@ -3,7 +3,7 @@
 
 
 
-  <div *ngIf="!name.author && !name.quote"><img src="assets/dribble_jaguar.gif">
+  <div *ngIf="!name?.author && !name?.quote"><img src="assets/dribble_jaguar.gif">
   </div>
 
 
@@ -11,11 +11,11 @@
   <router-outlet></router-outlet>
   <div class="jumbotron">
 
-    <h1>{{name.quote}}</h1>
+    <h1>{{name?.quote}}</h1>
 
 
   </div>
   <div class="jumbotron">
-    <h2>{{name.author}}</h2>
+    <h2>{{name?.author}}</h2>
   </div>
 </div>
