@@ -27,7 +27,7 @@ export class AppComponent implements OnInit {
   }
 
   getAdvantageData(): Observable<any> {
-    let apiUrl = "https://danish-quotes.now.sh/Random";
+    let apiUrl = "https://my-backend-app-vzslkjuwcx.now.sh/Random";
 
     return this.http.get(apiUrl).pipe(
       map((response: Response) => {
